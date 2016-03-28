@@ -1,0 +1,45 @@
+<ion-view view-title="Datos personales">
+  <ion-content class="positiveBGView">
+     <div class="card">
+		 <!--Foto-->
+		 <div name="foto" class="floatLeft">
+			<img class="image" src="img/foto.png" />
+			 <hr class="center" width="85%" />
+		 </div>
+		 <!--Datos personales-->
+		 <div name="datosPersonales" class="card dataCard floatLeft">
+			 <h3>Información</h3>
+			 <p><b>Nombre:</b> {{ctrlCV.nombre}}</p>
+			 <p><b>Fecha de nacimiento:</b> {{ctrlCV.fechaNacimiento}}</p>
+			 <p><b>NIF:</b> {{ctrlCV.dni}}</p>
+			 <p><b>Domicilio:</b> {{ctrlCV.domicilio}}</p>
+			 <p>{{ctrlCV.cp}}</p>
+				 <hr />
+			 <h3>Contacto</h3>
+			 <p><b>Teléfono:</b> {{ctrlCV.tlfn}}</p>
+			 <p><b>E-mail:</b> {{ctrlCV.email}}</p>
+				 <hr />
+			 <h3>Experiencia laboral</h3>
+			 <p><b>Última experiencia laboral:</b> {{ctrlCV.ultimaExpLaboral}}</p>
+			 <button class="button button-positive" ng-click="ctrlCV.showExp = !ctrlCV.showExp">
+				<div class="icon ion-chevron-down" ng-show="!ctrlCV.showExp"> Ver experiencia profesional</div>
+				<div class="icon ion-chevron-up" ng-show="ctrlCV.showExp"> Ocultar experiencia profesional</div>
+			 </button>
+			 <br />
+				 <div class="card expDropdown" ng-show="ctrlCV.showExp">
+					 <div class="icon ion-chevron-right">
+						 <b>BEEP S.L</b>
+						 <p class="indent">
+							 2013 (Abril-Mayo)<br />
+							 Técnico de reparaciones (Formación en Centros de Trabajo)
+						 </p>
+					 </div>
+				 </div>
+			 
+		 </div>
+		 <!--div para desactivar los floats-->
+		 <div class="noFloat" />
+	 </div>
+	 <p> </p>
+  </ion-content>
+</ion-view>

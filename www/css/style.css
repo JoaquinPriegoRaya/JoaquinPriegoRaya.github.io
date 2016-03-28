@@ -1,0 +1,89 @@
+/*Fondo para los templates*/
+.positiveBGView{
+	background-color : #387ef5;
+}
+
+/*Centrado de elementos*/
+.center{
+	margin : 0 auto;
+	text-align : center;
+	margin-left : 15%;
+	margin-right : 15%;
+}
+
+.center100{
+	margin : 0 auto;
+}
+
+/*Cambios en los items cuando se tiene el ratón encima*/
+.menuItem:hover{
+	font-size : 18px;
+	color : #387ef5;
+}
+
+/*Tipos de float*/
+.floatLeft{
+	float : left;
+}
+
+.floatRigth{
+	float : right;
+}
+
+.noFloat{
+	float : none;
+}
+
+/*Card contenedor de datos personales*/
+.dataCard{
+	margin-left : 3%;
+	padding-top : 2%;
+	padding-left : 2%;
+	padding-right : 2%;
+	padding-bottom : 2%;
+	width : 80%;
+	
+}
+
+/*Desplegable de esperiencia profesional*/
+.expDropdown{
+	padding-top : 2%;
+	padding-left : 2%;
+	padding-right : 2%;
+	padding-bottom : 2%;
+}
+
+/*Sangría para la descripción de la experiencia*/
+.indent{
+	padding-left : 3%;
+}
+
+/*Tamaño predefinido para las cabeceras de las tarjetas*/
+.header{
+	margin : 0 auto;
+}
+
+/*Márgenes para la foto del currículum*/
+.image{
+	margin-top : 20%;
+	margin-right : 15%;
+	margin-left: 10%;
+	margin-bottom : 5%;
+	border-radius : 10px;
+	width : 140px;
+	height : 180px;
+	border : 3px solid #000000;
+}
+
+/*Items de la lista de Formación académica*/
+.itemHeader{
+	margin-top : 2%;
+}
+
+/*Tarjetas de experiencia*/
+.expCard{
+	width : 150px;
+	margin-left : 3%;
+	position : inherit;
+	display : inline-block;
+}

@@ -1,0 +1,22 @@
+<ion-view view-title="Otros datos">
+  <ion-content class="positiveBGView">
+	 <h1 class="center">Habilidades</h1>
+	 <div class="center100" name="container">
+		 <div class="card expCard" ng-repeat="dato in ctrlOtros.datos">
+			 <div class="item item-divider">
+				 <p><b>{{dato.name}}</b></p>
+			 </div>
+			 <div class="item item-text-wrap">
+				 <p>Nivel</p>
+				 <progress value="{{dato.percent}}" max="100"></progress>
+			 </div>
+			 <div class="item item-divider">
+				 <p>{{dato.exp}}</p>
+			 </div>
+		 </div>
+	 <div>
+	 <!--Div para eliminar el desplazamiento hacia la izquiera de los elementos-->
+	 <div class="noFloat"></div>
+	 <hr width="100%"/>
+  </ion-content>
+</ion-view>
